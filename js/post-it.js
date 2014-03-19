@@ -1,3 +1,5 @@
+$(function(){
+
 var index = 2;
 
 var PostIt = function(e) {
@@ -30,10 +32,13 @@ var PostIt = function(e) {
             console.log(color.toRgbString().slice(0, -1) + ",0.3)");
         }
     });
-    $("#board").append($post_it);
+    $("#workspace0").append($post_it);
 };
 
-$("#board").on("mousedown", function(e) {
-    if (e.target.id == 'board')
-        new PostIt(e);
+    $(".workspace").on("mousedown", function(e) {
+        if (e.target.className == 'workspace'){
+            new PostIt(e);
+        }
+    });
 });
+

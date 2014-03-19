@@ -1,13 +1,19 @@
 *{
   font-family: 'Lato', sans-serif;
 }
-#board {
+html,
+body{
+  height:100%;
+}
+.workspace {
+  display:block;
   font-family: monospace;
-  background: url("./media/maldivian_beach_clear.jpg") no-repeat center #9e8d68;
+  background: url("../media/maldivian_beach_clear.jpg") no-repeat center #9e8d68;
   /*background-size: cover;*/
   margin: 0;
   padding: 0;
   position: relative;
+  height:100%;
 }
 
 .post-it {
@@ -15,7 +21,7 @@
   width: 200px;
   height:180px;
   /*background-color: yellow;*/
-  background: url("./media/maldivian_beach_blur.jpg") no-repeat center fixed #9e8d68;
+  background: url("../media/maldivian_beach_blur.jpg") no-repeat center fixed #9e8d68;
   box-shadow: -2px 2px 5px #555;
   overflow: hidden;
   display: none;

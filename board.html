@@ -13,25 +13,38 @@
   <script src='js/post-it.js'></script>
 </head>
 <body>
-<div id="master" class="post-it">
-  <div class="header"><input type="text" class="colors"/><span class="close">X</span></div>
-  <div class="content" contenteditable="true">WORDS!</div>
-  <div class="corner"></div>
-</div>
-<div id="UI_side">
-  <div class="UI_shade">
-  <ul>
-    <li>
-      <span id="UI_createWS" class="UI_workspaceButton">Create Workspace</span>
-    </li>
-    <li>
-      <span id="UI_delWS" class="UI_workspaceButton">Delete Workspace</span>
-    </li>
-  </ul>
+  <div id="header" class=".close">
+    <div class="UI_shade">
+        <div id="clock" class="dark">
+        <div class="display">
+          <div class="ampm"></div>
+          <div class="digits"></div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div id="workspace0" class="workspace">
+  <div id="master" class="post-it">
+    <div class="header"><input type="text" class="colors"/><span class="close">X</span></div>
+    <div class="content" contenteditable="true">WORDS!</div>
+    <div class="corner"></div>
+  </div>
+  <div id="UI_side">
+    <div class="UI_shade">
+    <ul>
+      <li>
+        <span id="UI_workspace0" class="UI_workspaceButton">Workspace 0</span>
+      </li>
+      <li>
+        <span id="UI_createWS" class="UI_workspaceButton">Create Workspace</span>
+      </li>
+      <li>
+        <span id="UI_delWS" class="UI_workspaceButton">Delete Workspace</span>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div id="workspace0" class="workspace">
 
-</div>
+  </div>
 </body>
 </html>

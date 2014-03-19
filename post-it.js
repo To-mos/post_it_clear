@@ -1,5 +1,6 @@
 $(function(){
-"use strict";
+    //Use strict javascript mode
+    "use strict";
 var index = 2;
 
 var PostIt = function(e) {

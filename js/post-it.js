@@ -48,6 +48,7 @@ $(function(){
             now += String(time.getSeconds()-12)+"AM";
         else
             now += String(time.getSeconds())+"PM";
+
         digits.h1.attr('class', digit_to_name[now[0]]);
         digits.h2.attr('class', digit_to_name[now[1]]);
         digits.m1.attr('class', digit_to_name[now[2]]);

@@ -24,8 +24,9 @@ body{
 #UI_side ul{
   margin:0;
   padding:10px;
+  list-style-type: none;
 }
-#UI_side ul li{
+.UI_workspaceButton{
   display: block;
   width: 100%;
   height: 50px;

@@ -37,9 +37,10 @@ var PostIt = function(e) {
 };
 
     $(".workspace").on("mousedown", function(e) {
-        if (e.target.className == 'workspace'){
-            new PostIt(e);
-        }
+        switch(e.target.className)
+            case 'workspace':
+                new PostIt(e);
+                break;
     });
 });
 

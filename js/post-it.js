@@ -131,6 +131,11 @@ $(function(){
                 workspaceTable.splice(workspaceCurrent,1);
                 --workspaceCurrent;
                 break;
+            case 'UI_workspace'+workspaceCurrent:
+                $('.workspace').hide();
+                $('#workspace'+workspaceCurrent).show();
+                //workspaceTable
+                break;
         }
     }).hover(function(){
     //enter
